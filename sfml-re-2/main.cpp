@@ -1,10 +1,3 @@
-// HI! Greet to you and wish you have a nice day!
-// This is my first project in C++/SFML. 
-// I made this for no reason, just giving my self a try
-// As the author of this project, I really don't suggest you to look around these code
-// Many of the codes are redundant and may not be a good example for you, provided that you have enough patient to dive into the mess below :P
-// That's all. Thanks for downloading. <3 Programming
-
 #include <map>
 #include <vector>
 #include <cctype>
