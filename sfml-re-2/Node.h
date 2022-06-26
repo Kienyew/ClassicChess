@@ -1,7 +1,7 @@
 // Every Plate in ChessBoard, maybe I shouldn't call it Node. whatever.
 
 #pragma once
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
 class Node : public sf::Drawable
 {

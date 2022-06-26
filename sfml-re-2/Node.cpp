@@ -1,5 +1,5 @@
 #include "Node.h"
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <utility>
 
 Node::Node(sf::FloatRect float_rect, bool white) :

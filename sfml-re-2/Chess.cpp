@@ -1,5 +1,6 @@
 #include "Chess.h"
 #include "ChessBoard.h"
+#include <stdexcept>
 #include <string>
 #include <iostream>
 
@@ -112,7 +113,7 @@ void Chess::initChessSprite(ChessType chessType)
 void Chess::initPosition(sf::Vector2u coord)
 {
 	if (!Chess::canMoveTo(coord)) 
-		throw std::exception((this->name() + ": initPosition: " + "unable to initialize position.").c_str());
+		throw std::runtime_error((this->name() + ": initPosition: " + "unable to initialize position.").c_str());
 
 	Node& targetNode = (*boardptr)[coord];
 	boardptr->setChessOn(coord, this);

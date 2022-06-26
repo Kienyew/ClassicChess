@@ -8,7 +8,7 @@
 #include <memory>
 #include <utility>
 #include <set>
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include "ChessBoard.h"
 #include "TextureTiles.h"
 
@@ -21,6 +21,8 @@ enum ChessType {
 enum ChessColor {
 	White, Black
 };
+
+class ChessBoard;
 
 class Chess : public sf::Drawable
 {

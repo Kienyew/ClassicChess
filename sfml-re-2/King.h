@@ -3,7 +3,7 @@
 #include <string>
 #include <utility>
 #include <memory>
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include "Chess.h"
 #include "ChessBoard.h"
 

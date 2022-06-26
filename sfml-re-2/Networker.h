@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include <functional>
-#include <SFML\Network.hpp>
+#include <SFML/Network.hpp>
 #include "Chess.h"
 
 enum NetworkRole { Server, Client };

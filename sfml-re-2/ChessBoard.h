@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include "Node.h"
 #include "Chess.h"
 

@@ -1,5 +1,6 @@
 #include "Node.h"
 #include "ChessBoard.h"
+#include <stdexcept>
 #include <vector>
 #include <iostream>
 #include <exception>
@@ -25,7 +26,7 @@ ChessBoard::~ChessBoard()
 Node & ChessBoard::operator[](sf::Vector2u coord)
 {
 	if (!inBound(coord))
-		throw std::exception("Coordinate out of bound.");
+		throw std::runtime_error("Coordinate out of bound.");
 
 	return nodesGrid[coord.x][coord.y];
 }
@@ -52,7 +53,7 @@ const Node * ChessBoard::posInNode(sf::Vector2f pos)
 
 Chess * ChessBoard::chessOn(sf::Vector2u coord)
 {
-	if (!inBound(coord)) throw std::exception("chessOn: coordinate not in bound.");
+	if (!inBound(coord)) throw std::runtime_error("chessOn: coordinate not in bound.");
 	return chessPtrGrid[coord.x][coord.y];
 }
 
@@ -82,7 +83,7 @@ void ChessBoard::draw(sf::RenderTarget & target, sf::RenderStates states) const
 
 void ChessBoard::setChessOn(sf::Vector2u coord, Chess * chessptr)
 {
-	if (!inBound(coord)) throw std::exception("setChessPtr: coordinate not in bound.");
+	if (!inBound(coord)) throw std::runtime_error("setChessPtr: coordinate not in bound.");
 	chessPtrGrid[coord.x][coord.y] = chessptr;
 }
 

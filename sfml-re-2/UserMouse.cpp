@@ -1,5 +1,5 @@
 #include "UserMouse.h"
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
 
 UserMouse::UserMouse(sf::Window* window) : window(window), m_selected(nullptr)

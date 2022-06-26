@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include "Chess.h"
 #include "ChessBoard.h"
 #include "Queen.h"

@@ -7,8 +7,8 @@
 #include <cstdlib>
 #include <iostream>
 #include <algorithm>
-#include <SFML\Graphics.hpp>
-#include <SFML\Network.hpp>
+#include <SFML/Graphics.hpp>
+#include <SFML/Network.hpp>
 #include "Node.h"
 #include "TextureTiles.h"
 #include "UserMouse.h"
@@ -385,7 +385,7 @@ int main(int argc, char* argv[])
 		catch (exception e) {
 			cout << e.what() << endl;
 			sf::sleep(sf::seconds(1));
-			_exit(-2);
+			exit(-2);
 		}
 	}
 	start();

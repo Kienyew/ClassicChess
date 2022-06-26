@@ -2,7 +2,7 @@
 #include <string>
 #include <initializer_list>
 #include <vector>
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <memory>
 
 class TextureTiles

@@ -1,9 +1,10 @@
 #include "Networker.h"
 
+#include <stdexcept>
 #include <string>
 #include <iostream>
 #include <exception>
-#include <SFML\Network.hpp>
+#include <SFML/Network.hpp>
 
 Networker::Networker(NetworkRole role) :
 	network_role(role),
@@ -20,7 +21,7 @@ Networker::~Networker()
 
 void Networker::acceptOne(unsigned short port)
 {
-	if (this->network_role != Server) throw std::exception("Only server can accept.");
+	if (this->network_role != Server) throw std::runtime_error("Only server can accept.");
 	listener.listen(port);
 	listener.accept(this->socket);
 	for (auto& f : onClientConnectCallbacks) {
